@@ -30,7 +30,7 @@ class Scan():
             print "No open port has been detected by the range provided"
             return
         arguments = '-O -p ' + str(openPorts[0]) + ' '
-        for i in range(1, 65535):
+        for i in range(1, 65536):
             if i not in openPorts:
                 arguments = arguments + str(i)
                 break
